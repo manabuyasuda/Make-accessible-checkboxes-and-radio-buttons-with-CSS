@@ -560,8 +560,9 @@ body {
 }
 
 .Checkbox + label {
-  position: relative;
   display: inline-block;
+  position: relative;
+  padding-left: 1.25em;
   cursor: pointer;
 }
 
@@ -569,12 +570,15 @@ body {
 .Checkbox + label:before {
   content: "";
   display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
   width: 1em;
   height: 1em;
-  margin-right: 0.25em;
+  margin: auto;
   border: 1px solid #767676;
   border-radius: 3px;
-  vertical-align: text-bottom;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -612,15 +616,22 @@ body {
 .Radio + label {
   display: inline-block;
   position: relative;
+  padding-left: 1.25em;
   cursor: pointer;
 }
 
 .Radio + label:before {
   content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1em;
   width: 1em;
   height: 1em;
-  display: inline-block;
-  margin-right: 0.25em;
+  height: 1em;
+  margin: auto;
   border: 1px solid #767676;
   border-radius: 50%;
   vertical-align: text-bottom;
