@@ -628,13 +628,10 @@ body {
   bottom: 0;
   left: 0;
   width: 1em;
-  width: 1em;
-  height: 1em;
   height: 1em;
   margin: auto;
   border: 1px solid #767676;
   border-radius: 50%;
-  vertical-align: text-bottom;
   background-repeat: no-repeat;
   background-size: contain;
 }
