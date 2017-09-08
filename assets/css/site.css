@@ -653,4 +653,25 @@ body {
   opacity: 0.5;
 }
 
-/*# sourceMappingURL=site.css.map */
+/**
+ * 印刷時とハイコントラストモード（IEとEdge）が有効なときのスタイル。
+ */
+@media screen and (-ms-high-contrast: active), print {
+  .Checkbox,
+  .Radio {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+
+  .Checkbox + label,
+  .Radio + label {
+    padding-left: 0;
+  }
+
+  .Checkbox + label:before,
+  .Radio + label:before {
+    display: none;
+  }
+}
